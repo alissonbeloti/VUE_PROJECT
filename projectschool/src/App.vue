@@ -1,16 +1,30 @@
 <template>
   <div id="app">
-    <Alunos />
+    <Nav></Nav>
+    <div class="marginPrincipal">
+      <Alunos />
+    </div>
+    <div class="marginPrincipal">
+      <Professores />
+    </div>
+    <div class="marginPrincipal">
+      <Sobre />
+    </div>
   </div>
 </template>
 
 <script>
 import Alunos from "./components/Aluno/Alunos.vue";
-
+import Professores from "./components/Professor/Professor.vue";
+import Sobre from "./components/Sobre/Sobre";
+import Nav from "./components/_nav/Nav";
 export default {
   name: "app",
   components: {
-    Alunos
+    Alunos,
+    Professores,
+    Nav,
+    Sobre
   }
 };
 </script>
@@ -30,8 +44,12 @@ html {
   height: 100%;
 }
 #app {
+  width: 100%;
 }
-
+.marginPrincipal {
+  width: 50%;
+  margin: auto;
+}
 table {
   margin: 0px;
   padding: 0px;
@@ -53,6 +71,9 @@ table thead th {
 }
 .colPequeno {
   width: 5%;
+}
+.filtro {
+  width: 100%;
 }
 .btn_Danger {
   background-color: #fa4430;

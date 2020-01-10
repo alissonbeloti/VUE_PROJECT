@@ -71,17 +71,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 input {
-  /* width: calc(100%-100px); */
+  width: calc(100% -195px);
   border: 0;
   padding: 15px;
   font-size: 1.3em;
   color: #687f7f;
-  display: inline;
 }
 .btnInput {
-  width: 120px;
+  width: 140px;
   border: 0px;
   padding: 20px;
+  font-size: 1.3em;
   background-color: rgb(116, 115, 115);
 }
 .btnInput:hover {
