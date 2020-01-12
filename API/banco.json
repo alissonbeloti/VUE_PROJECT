@@ -1,39 +1,91 @@
 {
+  "professores": [
+    {
+      "id": 1,
+      "nome": "Alisson",
+      "sobrenome": "Silva"
+    },
+    {
+      "id": 2,
+      "nome": "Paola",
+      "sobrenome": "Souza"
+    },
+    {
+      "id": 3,
+      "nome": "Breno",
+      "sobrenome": "Castel"
+    }
+  ],
   "alunos": [
     {
       "id": 1,
       "nome": "João",
-      "sobrenome": "Da Silva"
+      "sobrenome": "Da Silva",
+      "professor": {
+        "id": 1,
+        "nome": "Alisson",
+        "sobrenome": "Silva"
+      }
     },
     {
       "id": 2,
       "nome": "Maria",
-      "sobrenome": "Souza"
+      "sobrenome": "Souza",
+      "professor": {
+        "id": 1,
+        "nome": "Alisson",
+        "sobrenome": "Silva"
+      }
     },
     {
       "nome": "Joãozinho",
       "sobrenome": "",
-      "id": 3
+      "id": 3,
+      "professor": {
+        "id": 1,
+        "nome": "Alisson",
+        "sobrenome": "Silva"
+      }
     },
     {
       "nome": "Paula",
       "sobrenome": "",
-      "id": 5
+      "id": 5,
+      "professor": {
+        "id": 1,
+        "nome": "Alisson",
+        "sobrenome": "Silva"
+      }
     },
     {
       "nome": "Gabriel",
       "sobrenome": "",
-      "id": 6
+      "id": 6,
+      "professor": {
+        "id": 1,
+        "nome": "Alisson",
+        "sobrenome": "Silva"
+      }
     },
     {
       "nome": "Adriano",
       "sobrenome": "",
-      "id": 7
+      "id": 7,
+      "professor": {
+        "id": 2,
+        "nome": "Paola",
+        "sobrenome": "Souza"
+      }
     },
     {
       "nome": "teste 123",
       "sobrenome": "",
-      "id": 8
+      "id": 8,
+      "professor": {
+        "id": 3,
+        "nome": "Breno",
+        "sobrenome": "Castel"
+      }
     }
   ]
 }
