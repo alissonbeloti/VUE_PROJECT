@@ -2,7 +2,7 @@
   <div id="app">
     <Nav></Nav>
     <div class="marginPrincipal">
-      <router-view></router-view>
+      <router-view :key="$route.fullPath"></router-view>
     </div>
   </div>
 </template>
@@ -59,11 +59,15 @@ table thead th {
 }
 .colPequeno {
   width: 5%;
+  text-align: right;
+  background-color: rgb(125, 217, 245);
+  font-weight: bold;
 }
 .filtro {
   width: 100%;
 }
 .btn_Danger {
+  font-size: 0.8em !important;
   background-color: #fa4430;
 }
 .btn {
@@ -72,6 +76,7 @@ table thead th {
   cursor: pointer;
   color: white;
   font-weight: bold;
+  font-size: 1.2em;
   border-radius: 5px;
   border-bottom: 3px solid black;
 }

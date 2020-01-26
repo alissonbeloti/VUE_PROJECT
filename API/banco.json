@@ -21,6 +21,7 @@
       "id": 1,
       "nome": "João",
       "sobrenome": "Da Silva",
+      "dataNasc": "01/02/2000",
       "professor": {
         "id": 1,
         "nome": "Alisson",
@@ -29,8 +30,9 @@
     },
     {
       "id": 2,
-      "nome": "Maria",
-      "sobrenome": "Souza",
+      "nome": "Maria1",
+      "sobrenome": "Souza1",
+      "dataNasc": "15/02/1998",
       "professor": {
         "id": 1,
         "nome": "Alisson",
@@ -40,6 +42,7 @@
     {
       "nome": "Joãozinho",
       "sobrenome": "",
+      "dataNasc": "12/05/1986",
       "id": 3,
       "professor": {
         "id": 1,
@@ -50,6 +53,7 @@
     {
       "nome": "Paula",
       "sobrenome": "",
+      "dataNasc": "01/02/2000",
       "id": 5,
       "professor": {
         "id": 1,
@@ -60,6 +64,7 @@
     {
       "nome": "Gabriel",
       "sobrenome": "",
+      "dataNasc": "01/02/2000",
       "id": 6,
       "professor": {
         "id": 1,
@@ -70,6 +75,7 @@
     {
       "nome": "Adriano",
       "sobrenome": "",
+      "dataNasc": "01/02/2000",
       "id": 7,
       "professor": {
         "id": 2,
@@ -78,14 +84,34 @@
       }
     },
     {
-      "nome": "teste 123",
-      "sobrenome": "",
       "id": 8,
+      "nome": "teste 123",
+      "sobrenome": "Editado",
+      "dataNasc": "01/02/1975",
       "professor": {
         "id": 3,
         "nome": "Breno",
         "sobrenome": "Castel"
       }
+    },
+    {
+      "nome": "Alex",
+      "dataNasc": "01/02/2000",
+      "sobrenome": "Feijão",
+      "professor": {
+        "id": 3,
+        "nome": "Breno"
+      },
+      "id": 9
+    },
+    {
+      "nome": "Alessandra",
+      "sobrenome": "",
+      "professor": {
+        "id": 2,
+        "nome": "Paola"
+      },
+      "id": 10
     }
   ]
 }

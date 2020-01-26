@@ -1,6 +1,6 @@
 <template>
   <div>
-    <titulo texto="Professores" />
+    <titulo texto="Professores" :btnVoltar="true" />
     <table>
       <thead>
         <th>Mat.</th>
@@ -10,15 +10,15 @@
       <tbody v-if="Professores.length">
         <tr v-for="(professor, index) in Professores" :key="index">
           <!-- <td>{{index+1}}</td> -->
-          <td>{{professor.id}}</td>
+          <td class="colPequeno">{{professor.id}}</td>
 
           <router-link
-            to="/alunos"
+            :to="`/alunos/${professor.id}`"
             tag="td"
             style="cursor: pointer"
           >{{professor.nome}} {{professor.sobrenome}}</router-link>
 
-          <td>{{professor.qtdAlunos}}</td>
+          <td class="colPequeno">{{professor.qtdAlunos}}</td>
         </tr>
       </tbody>
       <tfoot v-else>Nenhum Professor Encontrado!</tfoot>
@@ -75,4 +75,8 @@ export default {
 </script>
 
 <style scoped>
+.colPequeno {
+  text-align: center;
+  width: 15%;
+}
 </style>
