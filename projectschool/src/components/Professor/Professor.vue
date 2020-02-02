@@ -21,7 +21,13 @@
           <td class="colPequeno">{{professor.qtdAlunos}}</td>
         </tr>
       </tbody>
-      <tfoot v-else>Nenhum Professor Encontrado!</tfoot>
+      <tfoot v-else>
+        <tr>
+          <td colspan="3" style="text-align: center">
+            <h5>Nenhum Professor Encontrado!</h5>
+          </td>
+        </tr>
+      </tfoot>
     </table>
   </div>
 </template>
@@ -39,7 +45,7 @@ export default {
   },
   created() {
     return this.$http
-      .get("http://localhost:3000/alunos")
+      .get("http://localhost:5000/aluno")
       .then(res => res.json())
       .then(alunos => {
         this.Alunos = alunos;
@@ -63,7 +69,7 @@ export default {
     },
     carregarProfessores() {
       this.$http
-        .get("http://localhost:3000/professores")
+        .get("http://localhost:5000/professor")
         .then(res => res.json())
         .then(professores => {
           this.Professores = professores;
